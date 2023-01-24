@@ -1,0 +1,52 @@
+{
+	"name": "personal-portfolio-website",
+	"version": "1",
+	"license": "MIT",
+	"scripts": {
+		"dev": "NODE_OPTIONS=\"--max_old_space_size=4096\" next -p 4001",
+		"build": "next build ",
+		"start": "next start",
+		"analyze": "ANALYZE=true yarn build"
+	},
+	"dependencies": {
+		"@babel/core": "^7.19.6",
+		"@babel/plugin-transform-runtime": "^7.19.6",
+		"@babel/preset-env": "^7.19.4",
+		"@babel/preset-react": "^7.18.6",
+		"@babel/preset-typescript": "^7.18.6",
+		"@babel/runtime": "7.10.2",
+		"@date-io/date-fns": "^2.11.0",
+		"@emotion/react": "^11.7.1",
+		"@emotion/styled": "^11.6.0",
+		"@mantine/core": "^4.2.12",
+		"@mantine/dropzone": "^5.0.3",
+		"@mantine/hooks": "^4.2.12",
+		"@mantine/modals": "^4.2.12",
+		"@mantine/next": "^4.2.12",
+		"@mantine/prism": "^4.2.12",
+		"@mantine/spotlight": "^5.0.0",
+		"@material-ui/core": "^4.12.4",
+		"@next/bundle-analyzer": "^12.3.0",
+		"@tailwindcss/postcss7-compat": "^2.1.0",
+		"autoprefixer": "^9",
+		"axios": "^0.21.1",
+		"babel-plugin-styled-components": "^1.10.7",
+		"date-fns": "^2.25.0",
+		"fs": "^0.0.1-security",
+		"moment": "^2.29.1",
+		"next": "^10.0.0",
+		"next-images": "^1.7.0",
+		"path": "^0.12.7",
+		"postcss": "^7",
+		"postcss-cli": "^8.3.1",
+		"react": "17.0.0",
+		"react-dom": "17.0.0",
+		"react-icons": "^4.1.0",
+		"react-transition-group": "^4.4.1",
+		"tailwindcss": "npm:@tailwindcss/postcss7-compat"
+	},
+	"devDependencies": {
+		"eslint": "^8.26.0",
+		"eslint-config-next": "13.0.1"
+	}
+}
