@@ -1,10 +1,10 @@
 import { responsiveFontSizes } from '@material-ui/core';
-import { createMuiTheme } from '@material-ui/core'
+import { createTheme } from '@material-ui/core'
 import colors from 'utils/config/colors';
 import { resolveConfig } from "tailwind.config";
 
 export const theme = responsiveFontSizes(
-	createMuiTheme({
+	createTheme({
 		palette: {
 			// primary: {
 			// 	main: tailwindConfig.theme.colors.primary.main,

@@ -1,15 +1,10 @@
 const portfolioData = {
 	name: "Shrey vijayvargiya",
 	heading: "this is Shrey",
-	description: `Developer 👓  Designer 🎨  Writer ✍️ <br /> 
+	description: `Developer 👓  Designer 🎨  Writer ✍️
     Breaking Topics into Steps, Building the products & sharing the Journey`,
 	workExperience: {
-		content: `I’ve have 4 years of industry experience - with Frontend being my primary strength. Have an experience in developing -
-1. Web applications
-2. Mobile apps(React Native)
-3. Backend(NodeJS)
-4. Firebase
-5. Blockchain applications(DeFi, Dapps)`,
+		content: `I’ve have 4 years of industry experience - with Frontend being my primary strength. Have an experience in developing Web applications, Mobile apps(React Native), Backend(NodeJS), Firebase, Blockchain applications(DeFi, Dapps)`,
 	},
 	contactDetails: {
 		content: [
@@ -55,7 +50,7 @@ const portfolioData = {
 		content: [
 			{
 				name: "Masters in Biotechnology, BITS Pilani University",
-        timeline: "2015-2019"
+				timeline: "2015-2019",
 			},
 		],
 	},

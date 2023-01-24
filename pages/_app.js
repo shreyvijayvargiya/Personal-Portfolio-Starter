@@ -3,30 +3,29 @@ import { theme } from "utils/theme";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { Body } from "modules";
 import "tailwindcss/tailwind.css";
-import "react-toastify/dist/ReactToastify.css";
 import "../styles.css";
 import { MantineProvider } from "@mantine/core";
-import { portfolioData } from "utils";
+import { Provider } from "react-redux";
+import store from "redux/store";
+import { PersistGate } from "redux-persist/integration/react";
+import { persistStore } from "redux-persist";
 
 function MyApp({ Component, pageProps }) {
-	
-	useEffect(() => {
-		const jssStyles = document.querySelector("#jss-server-side");
-		if (jssStyles) {
-			jssStyles.parentElement.removeChild(jssStyles);
-		}
-	}, []);
 
-	const data = portfolioData;
+	const persistor = persistStore(store);
 
 	return (
-		<ThemeProvider theme={theme}>
-			<MantineProvider withGlobalStyles withNormalizeCSS>
-				<Body pageProps={pageProps} data={data}>
-					<Component {...pageProps} />
-				</Body>
-			</MantineProvider>
-		</ThemeProvider>
+		<Provider store={store}>
+			<PersistGate persistor={persistor}>
+				<ThemeProvider theme={theme}>
+					<MantineProvider withGlobalStyles withNormalizeCSS>
+						<Body pageProps={pageProps}>
+							<Component {...pageProps} />
+						</Body>
+					</MantineProvider>
+				</ThemeProvider>
+			</PersistGate>
+		</Provider>
 	);
 }
 

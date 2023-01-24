@@ -1,3 +1,4 @@
+const { css } = require("@emotion/react");
 const colors = require("tailwindcss/colors");
 
 module.exports = {
@@ -7,7 +8,7 @@ module.exports = {
 		"./modules/**/*.{js,ts,jsx,tsx}",
 		"./utils/**/*.{js,ts,jsx,tsx}",
 	],
-	darkMode: false, // or 'media' or 'class'
+	darkMode: "class", // or 'media' or 'class'
 	theme: {
 		colors: {
 			blackBg: "rgb(2, 2, 2)",
@@ -65,6 +66,13 @@ module.exports = {
 				zinc: colors.gray,
 				slate: colors.slate,
 			},
+			typography: theme => ({
+				dark: {
+					css: {
+						color: "white"
+					}
+				}
+			})
 		},
 	},
 	plugins: [],

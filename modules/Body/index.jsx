@@ -1,13 +1,41 @@
 import React from "react";
-import { Navbar, Footer } from "modules";
+import { Navbar } from "modules";
+import { useSelector, useDispatch } from "react-redux";
+import { toggleTheme } from "redux/slice/userSlice";
 
-const Body = ({ children, data }) => {
-	console.log(data, "data");
+const Body = ({ children }) => {
+	const { user: data, theme } = useSelector((state) => state);
+
+	const dispatch = useDispatch();
+
+	const toggle = () => {
+		dispatch(toggleTheme({ theme: data.theme }));
+	};
+
 	return (
-		<div>
-			<Navbar />
-			<div className="w-full h-screen p-10 text-center">{children}</div>
-			<Footer />
+		<div
+			className={`${data.theme} outline-none`}
+			tabIndex="0"
+			onKeyDown={(e) => {
+				if (e.key === "t") {
+					toggle();
+				}
+			}}
+		>
+			<div className="text-center bg-white dark:bg-gray-900 dark:text-gray-100 outline-none h-auto">
+				<Navbar />
+				<div className="w-full text-center py-10 ">
+					{children}
+				</div>
+				<button
+					onClick={toggle}
+					className="py-3 px-10 border-black text-gray-400 bg-gray-100 rounded-md"
+				>
+					Press T to toggle theme
+				</button>
+				<br />
+				<br />
+			</div>
 		</div>
 	);
 };
