@@ -8,6 +8,12 @@ const Navbar = () => {
 	const { user } = useSelector((state) => state);
 	const values = user.defaultPortfolioData;
 
+	const dispatch = useDispatch();
+
+	const toggle = () => {
+		dispatch(toggleTheme({ theme: user.theme }));
+	};
+
 	return (
 		<div className="flex justify-between items-center w-full bg-gray-100 p-4 border-b dark:border-gray-800 dark:bg-gray-900 dark:text-gray-100">
 			<div className="flex justify-start gap-1 items-center">
@@ -23,12 +29,12 @@ const Navbar = () => {
 				</div>
 			</div>
 			<div className="flex justify-start gap-2">
-				{values?.socialMedia &&
-					(values?.socialMedia?.content).map((item) => (
-						<a href={item.link} target="_blank" key={item.name}>
-							<RenderIconComponent name={item.name} />
-						</a>
-					))}
+				<button
+					onClick={toggle}
+					className="py-2 text-sm px-8 border-black text-gray-800 bg-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-100"
+				>
+					Press T to toggle theme
+				</button>
 			</div>
 		</div>
 	);

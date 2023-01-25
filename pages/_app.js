@@ -3,7 +3,7 @@ import { theme } from "utils/theme";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { Body } from "modules";
 import "tailwindcss/tailwind.css";
-import "../styles.css";
+import "../public/styles.css";
 import { MantineProvider } from "@mantine/core";
 import { Provider } from "react-redux";
 import store from "redux/store";

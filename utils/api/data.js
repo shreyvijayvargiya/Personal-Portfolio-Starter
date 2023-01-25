@@ -4,7 +4,26 @@ const portfolioData = {
 	description: `Developer 👓  Designer 🎨  Writer ✍️
     Breaking Topics into Steps, Building the products & sharing the Journey`,
 	workExperience: {
-		content: `I’ve have 4 years of industry experience - with Frontend being my primary strength. Have an experience in developing Web applications, Mobile apps(React Native), Backend(NodeJS), Firebase, Blockchain applications(DeFi, Dapps)`,
+		content: [
+			{
+				name: "Full Stack Developer",
+				date: "Present",
+				content:
+					"Developing and Running Full Stack website iHateReading along with Writing Blogs and Making online content",
+			},
+			{
+				name: "Mobile App Developer - CoinSwitch",
+				date: "March 20 - jan 21",
+				content:
+					"Developed cryptocurrency trading application for millions of users. Successfully improved app(APK) bundle size by 40%. Increased Application runtime speed by 25%. Integration of GraphQL to enhance performance by 50%. Implementation of Graphs, Flatlists, Animations Firebase and Amplitude software tools.",
+			},
+			{
+				name: "Frontend Developer - Cogoport",
+				date: "April 19- Feb 20",
+				content: `
+Developed React UI library of 72 components (https:// nautical.cogoport.com). Developed the packages like React reusable hooks,React realtime editable Spreadsheet, CMS(Content management system) & UI Library. Worked on Babel, Webpack, Next JS, Redux, Gatsby`,
+			},
+		],
 	},
 	contactDetails: {
 		content: [

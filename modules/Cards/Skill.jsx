@@ -6,12 +6,16 @@ const SkillsComponent = ({ name }) => {
 	const values = user.defaultPortfolioData[name].content;
 
 	return (
-		<div className="p-10">
-      <ol className="list-disc">
-        {values.map(item => (
-          <li>{item}</li>
-        ))}
-      </ol>
+		<div className="p-10 text-left w-full">
+			<div className="flex justify=start items-center gap-2 pb-2 border-b border-gray-800">
+				<img src="./images/skills.png" className="w-6 h-6 rounded-sm" />
+				<p className="text-xl">Skills</p>
+			</div>
+			<ol className="list-disc p-10">
+				{values.map((item) => (
+					<li>{item}</li>
+				))}
+			</ol>
 		</div>
 	);
 };

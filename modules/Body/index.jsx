@@ -27,14 +27,6 @@ const Body = ({ children }) => {
 				<div className="w-full text-center py-10 ">
 					{children}
 				</div>
-				<button
-					onClick={toggle}
-					className="py-3 px-10 border-black text-gray-400 bg-gray-100 rounded-md"
-				>
-					Press T to toggle theme
-				</button>
-				<br />
-				<br />
 			</div>
 		</div>
 	);

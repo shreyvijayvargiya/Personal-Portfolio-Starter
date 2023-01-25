@@ -7,8 +7,12 @@ const ProjectsComponent = ({ name }) => {
 
 
 	return (
-		<div className="p-10">
-			<ol className="list-disc">
+		<div className="p-10 text-left w-full">
+			<div className="flex justify=start items-center gap-2 pb-2 border-b border-gray-800">
+				<img src="./images/projects.png" className="w-6 h-6 rounded-sm" />
+				<p className="text-2xl">Projects</p>
+			</div>
+			<ol className="list-disc p-10">
 				{values.map((item) => (
 					<li className="m-2">
 						{item.name}
@@ -21,7 +25,7 @@ const ProjectsComponent = ({ name }) => {
 						</a>
 					</li>
 				))}
-			</ol >
+			</ol>
 		</div>
 	);
 };
