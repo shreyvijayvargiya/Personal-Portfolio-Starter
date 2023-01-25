@@ -11,6 +11,7 @@ const userSlice = createSlice({
 	name: "user",
 	reducers: {
 		toggleTheme: (state, action) => {
+			console.log(action.payload, "action payload for reducer")
 			return {
 				...state,
 				theme: action.payload.theme === "dark" ? "light": "dark"

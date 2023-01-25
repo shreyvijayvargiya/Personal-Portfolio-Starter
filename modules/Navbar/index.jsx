@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleTheme } from "redux/slice/userSlice";
 import router from "next/router";
-import { RenderIconComponent } from "modules/Icons";
+
 
 const Navbar = () => {
 	const { user } = useSelector((state) => state);
@@ -13,6 +13,8 @@ const Navbar = () => {
 	const toggle = () => {
 		dispatch(toggleTheme({ theme: user?.theme }));
 	};
+
+	console.log(user.theme, "theme")
 
 	return (
 		<div className="flex justify-between items-center w-full bg-gray-100 p-4 border-b dark:border-gray-800 dark:bg-gray-900 dark:text-gray-100">
