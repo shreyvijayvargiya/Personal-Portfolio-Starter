@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 
-const ProjectsComponent = ({ name }) => {
+const ProjectsComponent = () => {
 	const { user } = useSelector((state) => state);
-	const values = user.defaultPortfolioData[name].content;
-
+	const values = user.defaultPortfolioData["projects"].content;
 
 	return (
 		<div className="p-10 text-left w-full">
@@ -13,11 +12,11 @@ const ProjectsComponent = ({ name }) => {
 				<p className="text-2xl">Projects</p>
 			</div>
 			<ol className="list-disc px-10 py-5">
-				{values.map((item) => (
+				{values && values.length > 0 && values.map((item) => (
 					<li className="m-2" key={item.name}>
-						{item.name}
+						{item?.name}
 						<a
-							href={item.link}
+							href={item?.link}
 							className="text-indigo-600 mx-2"
 							target="_blank"
 						>

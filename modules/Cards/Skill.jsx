@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 
-const SkillsComponent = ({ name }) => {
+const SkillsComponent = () => {
 	const { user } = useSelector((state) => state);
-	const values = user.defaultPortfolioData[name].content;
+	const values = user.defaultPortfolioData["skills"]?.content;
 
 	return (
 		<div className="p-10 text-left w-full">
@@ -12,7 +12,7 @@ const SkillsComponent = ({ name }) => {
 				<p className="text-xl">Skills</p>
 			</div>
 			<ol className="list-disc px-10 py-5">
-				{values.map((item) => (
+				{values && values.length > 0 && values?.map((item) => (
 					<li key={item}>{item}</li>
 				))}
 			</ol>

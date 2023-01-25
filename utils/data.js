@@ -19,8 +19,7 @@ const portfolioData = {
 			{
 				name: "Frontend Developer - Cogoport",
 				date: "April 19- Feb 20",
-				content: `
-Developed React UI library of 72 components (https:// nautical.cogoport.com). Developed the packages like React reusable hooks,React realtime editable Spreadsheet, CMS(Content management system) & UI Library. Worked on Babel, Webpack, Next JS, Redux, Gatsby`,
+				content: `Developed React UI library of 72 components (https:// nautical.cogoport.com). Developed the packages like React reusable hooks,React realtime editable Spreadsheet, CMS(Content management system) & UI Library. Worked on Babel, Webpack, Next JS, Redux, Gatsby`,
 			},
 		],
 	},
@@ -111,8 +110,8 @@ Developed React UI library of 72 components (https:// nautical.cogoport.com). De
 			},
 			{
 				name: "Instagram",
-				link: ""
-			}
+				link: "",
+			},
 		],
 	},
 };

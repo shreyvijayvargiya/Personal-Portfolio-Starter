@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { toggleTheme } from "redux/slice/userSlice";
 
 const Body = ({ children }) => {
-	const { user: data, theme } = useSelector((state) => state);
+	const { user: data } = useSelector((state) => state);
 
 	const dispatch = useDispatch();
 

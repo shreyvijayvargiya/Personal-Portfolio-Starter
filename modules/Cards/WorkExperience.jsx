@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 
-const WorkExperienceComponent = ({ name }) => {
+const WorkExperienceComponent = () => {
+	
 	const { user } = useSelector((state) => state);
-	const values = user.defaultPortfolioData[name]?.content;
-
-
-	console.log(values, "values")
+	const values = user.defaultPortfolioData["workExperience"]?.content;
 	return (
 		<div className="p-10 text-left w-full">
 			<div className="flex justify=start items-center gap-2 pb-2 border-b border-gray-800">

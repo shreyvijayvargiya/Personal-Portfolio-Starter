@@ -1,11 +1,13 @@
-import React, { useEffect } from "react";
-import { Body } from "modules";
-import "tailwindcss/tailwind.css";
-import "../public/styles.css";
+import React from "react";
 import { Provider } from "react-redux";
-import store from "redux/store";
 import { PersistGate } from "redux-persist/integration/react";
 import { persistStore } from "redux-persist";
+
+import { Body } from "modules";
+import store from "redux/store";
+
+import "tailwindcss/tailwind.css";
+import "../public/styles.css";
 
 function MyApp({ Component, pageProps }) {
 	const persistor = persistStore(store);

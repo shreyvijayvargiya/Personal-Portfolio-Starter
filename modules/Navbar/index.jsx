@@ -6,12 +6,12 @@ import { RenderIconComponent } from "modules/Icons";
 
 const Navbar = () => {
 	const { user } = useSelector((state) => state);
-	const values = user.defaultPortfolioData;
+	const values = user?.defaultPortfolioData;
 
 	const dispatch = useDispatch();
 
 	const toggle = () => {
-		dispatch(toggleTheme({ theme: user.theme }));
+		dispatch(toggleTheme({ theme: user?.theme }));
 	};
 
 	return (

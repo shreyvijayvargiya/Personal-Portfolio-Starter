@@ -1,10 +1,10 @@
 import { RenderIconComponent } from "modules/Icons";
-import React, { useState } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 
-const SocialMediaComponent = ({ name }) => {
+const SocialMediaComponent = () => {
 	const { user } = useSelector((state) => state);
-	const values = user.defaultPortfolioData[name].content;
+	const values = user.defaultPortfolioData["socialMedia"]?.content;
 
 	return (
 		<div className="p-10 text-left w-full">
@@ -13,15 +13,15 @@ const SocialMediaComponent = ({ name }) => {
 				<p className="text-xl">Social Media</p>
 			</div>
 			<div className="px-10 py-5">
-				{values.map((item) => (
+				{values && values.length > 0 && values.map((item) => (
 					<a
-						href={item.link}
-						key={item.name}
+						href={item?.link}
+						key={item?.name}
 						target="_blank"
 						className="m-2 flex justify-start items-center gap-1"
 					>
-						<RenderIconComponent name={item.name} />
-						<p>{item.name}</p>
+						<RenderIconComponent name={item?.name} />
+						<p>{item?.name}</p>
 					</a>
 				))}
 			</div>
