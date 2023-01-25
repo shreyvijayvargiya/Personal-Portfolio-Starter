@@ -1,0 +1,1 @@
+{"ast":null,"code":"import colors from \"tailwindcss/colors\";\nexport default colors;","map":null,"metadata":{},"sourceType":"module"}

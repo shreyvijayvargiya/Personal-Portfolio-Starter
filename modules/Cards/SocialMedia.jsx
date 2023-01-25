@@ -12,10 +12,11 @@ const SocialMediaComponent = ({ name }) => {
 				<img src="./images/socialMedia.png" className="w-6 h-6 rounded-sm" />
 				<p className="text-xl">Social Media</p>
 			</div>
-			<div className="p-10">
+			<div className="px-10 py-5">
 				{values.map((item) => (
 					<a
 						href={item.link}
+						key={item.name}
 						target="_blank"
 						className="m-2 flex justify-start items-center gap-1"
 					>

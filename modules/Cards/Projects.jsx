@@ -12,9 +12,9 @@ const ProjectsComponent = ({ name }) => {
 				<img src="./images/projects.png" className="w-6 h-6 rounded-sm" />
 				<p className="text-2xl">Projects</p>
 			</div>
-			<ol className="list-disc p-10">
+			<ol className="list-disc px-10 py-5">
 				{values.map((item) => (
-					<li className="m-2">
+					<li className="m-2" key={item.name}>
 						{item.name}
 						<a
 							href={item.link}

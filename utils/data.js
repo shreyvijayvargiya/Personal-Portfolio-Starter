@@ -97,6 +97,22 @@ Developed React UI library of 72 components (https:// nautical.cogoport.com). De
 				name: "LinkedIn",
 				link: "https://www.linkedin.com/in/shrey-vijayvargiya-b62a3a105/",
 			},
+			{
+				name: "Youtube",
+				link: "https://youtube.com/@shreyvijay",
+			},
+			{
+				name: "DevTo",
+				link: "",
+			},
+			{
+				name: "Hashnode",
+				link: "",
+			},
+			{
+				name: "Instagram",
+				link: ""
+			}
 		],
 	},
 };

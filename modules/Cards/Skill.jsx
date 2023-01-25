@@ -11,9 +11,9 @@ const SkillsComponent = ({ name }) => {
 				<img src="./images/skills.png" className="w-6 h-6 rounded-sm" />
 				<p className="text-xl">Skills</p>
 			</div>
-			<ol className="list-disc p-10">
+			<ol className="list-disc px-10 py-5">
 				{values.map((item) => (
-					<li>{item}</li>
+					<li key={item}>{item}</li>
 				))}
 			</ol>
 		</div>
