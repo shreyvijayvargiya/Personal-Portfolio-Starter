@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import { Modal } from "@mantine/core";
 import {
 	WorkExperienceComponent,
 	SkillsComponent,
@@ -10,18 +9,7 @@ import {
 
 const Home = () => {
 	const { user: data } = useSelector((state) => state);
-	const [opened, setOpened] = useState(false);
-	const [modalData, setData] = useState({
-		name: "",
-		title: "",
-	});
 	const values = data.defaultPortfolioData;
-
-	const openModal = (name, title) => {
-		setData({ name: name, title: title });
-		setOpened(true);
-	};
-
 	return (
 		<div className="flex flex-col justify-center items-center gap-4">
 			<div className="md:w-2/6 mx-auto sm:w-2/5 xs:w-full xxs:w-full">
