@@ -1,1 +1,0 @@
-{"ast":null,"code":"export { default as colors } from \"./config/colors\";\nexport { default as portfolioData } from \"./data\";","map":null,"metadata":{},"sourceType":"module"}
