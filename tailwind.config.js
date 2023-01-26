@@ -55,8 +55,10 @@ module.exports = {
 		},
 	},
 	variants: {
-	  backgroundColor: ['dark'],
-		text: ['dark']
+	 extend: {
+	      backgroundColor: ['dark'],
+	      textColor: ['dark']
+	    },
 	},
 	plugins: [],
 };
