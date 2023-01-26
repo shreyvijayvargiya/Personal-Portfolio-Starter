@@ -8,7 +8,7 @@ module.exports = {
 		"./modules/**/*.{js,ts,jsx,tsx}",
 		"./utils/**/*.{js,ts,jsx,tsx}",
 	],
-	darkMode: "media", // or 'media' or 'class'
+	darkMode: "class", // or 'media' or 'class'
 	theme: {
 		colors: {
 			yellow: colors.yellow,
@@ -54,6 +54,9 @@ module.exports = {
 			full: "100%",
 		},
 	},
-	variants: ['dark'],
+	variants: {
+	  backgroundColor: ['dark'],
+		text: ['dark']
+	},
 	plugins: [],
 };
