@@ -54,6 +54,6 @@ module.exports = {
 			full: "100%",
 		},
 	},
-	variants: ['dark', 'dark-hover'],
+	variants: ['dark'],
 	plugins: [],
 };
