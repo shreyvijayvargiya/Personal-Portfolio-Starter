@@ -2,12 +2,18 @@ const { css } = require("@emotion/react");
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-	purge: [
+	 future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
+	purge: {
+		enabled: process.env.NODE_ENV === 'production',
+		content: [
 		"./pages/**/*.{js,ts,jsx,tsx}",
 		"./components/**/*.{js,ts,jsx,tsx}",
 		"./modules/**/*.{js,ts,jsx,tsx}",
 		"./utils/**/*.{js,ts,jsx,tsx}",
-	],
+	]},
 	darkMode: "class", // or 'media' or 'class'
 	theme: {
 		colors: {
