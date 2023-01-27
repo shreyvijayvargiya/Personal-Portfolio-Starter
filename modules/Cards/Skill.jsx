@@ -6,15 +6,15 @@ const SkillsComponent = () => {
 	const values = user.defaultPortfolioData["skills"]?.content;
 
 	return (
-		<div className="p-10 text-left w-full">
-			<div className="flex justify=start items-center gap-2 pb-2 border-b border-gray-800">
-				<img src="./images/skills.png" className="w-6 h-6 rounded-sm" />
-				<p className="text-xl">Skills</p>
+		<div className="grid grid-cols-2 items-center gap-2  p-10 text-left md:w-4/5 mx-auto sm:w-full xxs:w-full xs:w-full">
+			<div className="p-2">
+				<img src="./images/skills.png" className="w-20 h-20 rounded-sm" />
+				<p className="text-5xl">Skills</p>
 			</div>
-			<ol className="list-disc px-10 py-5">
-				{values && values.length > 0 && values?.map((item) => (
-					<li key={item}>{item}</li>
-				))}
+			<ol className="list-disc px-10 py-5 border border-gray-800 rounded-md">
+				{values &&
+					values.length > 0 &&
+					values?.map((item) => <li key={item}>{item}</li>)}
 			</ol>
 		</div>
 	);

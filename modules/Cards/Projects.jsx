@@ -6,24 +6,26 @@ const ProjectsComponent = () => {
 	const values = user.defaultPortfolioData["projects"].content;
 
 	return (
-		<div className="p-10 text-left w-full">
-			<div className="flex justify=start items-center gap-2 pb-2 border-b border-gray-800">
-				<img src="./images/projects.png" className="w-6 h-6 rounded-sm" />
-				<p className="text-2xl">Projects</p>
+		<div className="grid grid-cols-2 items-center gap-2 p-10 text-left md:w-4/5 mx-auto sm:w-full xxs:w-full xs:w-full">
+			<div className="p-2">
+				<img src="./images/projects.png" className="w-20 h-20 rounded-sm" />
+				<p className="text-5xl">Projects</p>
 			</div>
-			<ol className="list-disc px-10 py-5">
-				{values && values.length > 0 && values.map((item) => (
-					<li className="m-2" key={item.name}>
-						{item?.name}
-						<a
-							href={item?.link}
-							className="text-indigo-600 mx-2"
-							target="_blank"
-						>
-							Link
-						</a>
-					</li>
-				))}
+			<ol className="list-disc px-10 py-5 border border-gray-800 rounded-md">
+				{values &&
+					values.length > 0 &&
+					values.map((item) => (
+						<li className="m-2" key={item.name}>
+							{item?.name}
+							<a
+								href={item?.link}
+								className="text-indigo-600 mx-2"
+								target="_blank"
+							>
+								Link
+							</a>
+						</li>
+					))}
 			</ol>
 		</div>
 	);

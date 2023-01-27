@@ -1,2 +1,2 @@
-export { default as colors } from "./config/colors";
+export { default as colors } from "./colors";
 export { default as portfolioData } from "./data";

@@ -1,17 +1,18 @@
-const { css } = require("@emotion/react");
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-	purge: [
-		"./pages/**/*.{js,ts,jsx,tsx}",
-		"./components/**/*.{js,ts,jsx,tsx}",
-		"./modules/**/*.{js,ts,jsx,tsx}",
-		"./utils/**/*.{js,ts,jsx,tsx}",
-	],
+	purge: {
+		enabled: process.env.NODE_ENV === "production",
+		content: [
+			"./pages/**/*.{js,ts,jsx,tsx}",
+			"./components/**/*.{js,ts,jsx,tsx}",
+			"./modules/**/*.{js,ts,jsx,tsx}",
+			"./utils/**/*.{js,ts,jsx,tsx}",
+		],
+	},
 	darkMode: "class", // or 'media' or 'class'
 	theme: {
 		colors: {
-			black: "rgb(0, 0, 0)",
 			yellow: colors.yellow,
 			red: colors.red,
 			green: colors.green,
@@ -55,5 +56,6 @@ module.exports = {
 			full: "100%",
 		},
 	},
+	
 	plugins: [],
 };

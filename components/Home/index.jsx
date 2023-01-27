@@ -12,24 +12,31 @@ const Home = () => {
 	const values = data?.defaultPortfolioData;
 	return (
 		<div className="flex flex-col justify-center items-center gap-4">
-			<div className="md:w-2/6 mx-auto sm:w-2/5 xs:w-full xxs:w-full">
+			<div className="md:w-2/6 mx-auto sm:w-2/5 xs:w-full xxs:w-full text-center">
 				<img
 					src="./images/avatar.png"
-					className="w-40 h-40 rounded-full mx-auto"
+					className="w-60 h-60 rounded-full mx-auto"
 				/>
-				<p className="text-xl ">{values.heading}</p>
-				<p>{values?.description}</p>
-				<br />
+				<div className="my-4">
+					<p className="text-7xl my-4">{values.heading}</p>
+					<p className="md:w-3/5 sm:w-full xxs:w-full xs:w-full mx-auto">
+						{values?.description}
+					</p>
+				</div>
 				<button className="bg-indigo-600 rounded-md hover:bg-indigo-700 border p-3 dark:border-black text-white text-bold shadow-xl">
 					<a href={values?.contactDetails?.content[0]?.link} target="_blank">
-						Hire me
+						Let's talk
 					</a>
 				</button>
 			</div>
-			<div className="md:w-3/5 mx-auto sm:w-full xxs:w-full xs:w-full">
+			<div>
+				<hr className="border-t border-gray-100 dark:border-gray-800" />
 				<WorkExperienceComponent />
+				<hr className="border-t border-gray-100 dark:border-gray-800" />
 				<ProjectsComponent />
+				<hr className="border-t border-gray-100 dark:border-gray-800" />
 				<SkillsComponent />
+				<hr className="border-t border-gray-100 dark:border-gray-800" />
 				<SocialMediaComponent />
 			</div>
 		</div>
