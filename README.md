@@ -1,4 +1,4 @@
-# Protfolio Website Repository
+# Portfolio Website Repository
 
 ### Build your portfolio website instantly using a JSON file.
 
