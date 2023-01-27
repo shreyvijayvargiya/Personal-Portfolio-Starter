@@ -1,6 +1,6 @@
-# 2023 Full Stack Frontend Repository
+# Protfolio Website Repository
 
-### <a href="">Read Docs</a>
+### Build your portfolio website instantly using a JSON file.
 
 ## How to Run Locally
 
@@ -8,7 +8,7 @@
 Clone the repository
 run yarn
 run yarn run dev
-open localhost:4001
+open localhost:3000
 
 ```
 

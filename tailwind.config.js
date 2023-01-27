@@ -1,6 +1,7 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
+<<<<<<< HEAD
 	purge: {
 		enabled: process.env.NODE_ENV === "production",
 		content: [
@@ -10,6 +11,20 @@ module.exports = {
 			"./utils/**/*.{js,ts,jsx,tsx}",
 		],
 	},
+=======
+	 future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
+	purge: {
+		enabled: process.env.NODE_ENV === 'production',
+		content: [
+		"./pages/**/*.{js,ts,jsx,tsx}",
+		"./components/**/*.{js,ts,jsx,tsx}",
+		"./modules/**/*.{js,ts,jsx,tsx}",
+		"./utils/**/*.{js,ts,jsx,tsx}",
+	]},
+>>>>>>> ca001d44bab18d2d8e5afa83edd21f88d0ee0a4a
 	darkMode: "class", // or 'media' or 'class'
 	theme: {
 		colors: {
@@ -56,6 +71,15 @@ module.exports = {
 			full: "100%",
 		},
 	},
+<<<<<<< HEAD
 	
+=======
+	variants: {
+	 extend: {
+	      backgroundColor: ['dark'],
+	      textColor: ['dark']
+	    },
+	},
+>>>>>>> ca001d44bab18d2d8e5afa83edd21f88d0ee0a4a
 	plugins: [],
 };
