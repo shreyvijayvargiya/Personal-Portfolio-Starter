@@ -12,6 +12,10 @@ const Body = ({ children }) => {
 		dispatch(toggleTheme({ theme: data.theme }));
 	};
 
+	React.useEffect(() => {
+		document.body.className = data.theme;
+	}, [ data.theme])
+
 	return (
 		<div
 			className={`${data.theme} outline-none`}
