@@ -20,7 +20,7 @@ const Home = () => {
 
 	return (
 		<div className="flex flex-col justify-center items-center gap-4">
-			<div className="md:w-2/6 mx-auto sm:w-2/5 xs:w-full xxs:w-full text-center h-screen py-20">
+			<div className="md:w-2/6 mx-auto sm:w-2/5 xs:w-full xxs:w-full text-center h-screen flex flex-col justify-center items-center">
 				<img
 					src="./images/avatar.png"
 					className="w-60 h-60 rounded-full mx-auto"

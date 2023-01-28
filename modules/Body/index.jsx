@@ -22,7 +22,7 @@ const Body = ({ children }) => {
 				}
 			}}
 		>
-			<div className="text-center bg-white dark:bg-gray-900 dark:text-gray-100 outline-none h-auto">
+			<div className={`${data.theme} text-center bg-white dark:bg-gray-900 dark:text-gray-100 outline-none h-auto`}>
 				<Navbar />
 				<div className="w-full text-center py-10 ">
 					{children}
