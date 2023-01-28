@@ -6,7 +6,7 @@ const ProjectsComponent = () => {
 	const values = user.defaultPortfolioData["projects"].content;
 
 	return (
-		<div className="grid grid-cols-2 items-center gap-2 p-10 text-left md:w-4/5 mx-auto sm:w-full xxs:w-full xs:w-full">
+		<div className="grid md:grid-cols-2 sm:grid-cols-1 xxs:grid-cols-1 xs:grid-cols-1 items-center gap-2 p-10 text-left md:w-4/5 mx-auto sm:w-full xxs:w-full xs:w-full">
 			<div className="p-2">
 				<img src="./images/projects.png" className="w-20 h-20 rounded-sm" />
 				<p className="text-5xl">Projects</p>

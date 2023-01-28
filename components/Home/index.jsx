@@ -4,8 +4,9 @@ import {
 	WorkExperienceComponent,
 	SkillsComponent,
 	ProjectsComponent,
-	SocialMediaComponent,
+	SocialMediaComponent,Divider
 } from "modules";
+
 
 const Home = () => {
 	const { user: data } = useSelector((state) => state);
@@ -30,13 +31,13 @@ const Home = () => {
 				</button>
 			</div>
 			<div>
-				<hr className="border-t border-gray-100 dark:border-gray-800" />
+				<Divider />
 				<WorkExperienceComponent />
-				<hr className="border-t border-gray-100 dark:border-gray-800" />
+				<Divider />
 				<ProjectsComponent />
-				<hr className="border-t border-gray-100 dark:border-gray-800" />
+				<Divider />
 				<SkillsComponent />
-				<hr className="border-t border-gray-100 dark:border-gray-800" />
+				<Divider />
 				<SocialMediaComponent />
 			</div>
 		</div>
