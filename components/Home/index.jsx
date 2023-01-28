@@ -6,29 +6,35 @@ import {
 	ProjectsComponent,
 	SocialMediaComponent,Divider
 } from "modules";
-
+import { DownArrow } from "modules/Icons";
 
 const Home = () => {
 	const { user: data } = useSelector((state) => state);
 	const values = data?.defaultPortfolioData;
+
+	const scrollToDown = React.useCallback(() => {
+		if(typeof window !== "undefined"){
+			window.scrollBy({ top: 800, left:0, behavior: "smooth" })
+		}
+	}, [ ]);
+
 	return (
 		<div className="flex flex-col justify-center items-center gap-4">
-			<div className="md:w-2/6 mx-auto sm:w-2/5 xs:w-full xxs:w-full text-center">
+			<div className="md:w-2/6 mx-auto sm:w-2/5 xs:w-full xxs:w-full text-center h-screen py-20">
 				<img
 					src="./images/avatar.png"
 					className="w-60 h-60 rounded-full mx-auto"
 				/>
 				<div className="my-4">
-					<p className="text-7xl my-4">{values.heading}</p>
-					<p className="md:w-3/5 sm:w-full xxs:w-full xs:w-full mx-auto">
+					<p className="text-8xl my-4">{values.heading}</p>
+					<p className="text-xl md:w-4/5 sm:w-full xxs:w-full xs:w-full mx-auto">
 						{values?.description}
 					</p>
 				</div>
-				<button className="bg-indigo-600 rounded-md hover:bg-indigo-700 border p-3 dark:border-black text-white text-bold shadow-xl">
-					<a href={values?.contactDetails?.content[0]?.link} target="_blank">
-						Let's talk
-					</a>
-				</button>
+				<div className="text-center cursor-pointer w-fit hover:bg-gray-100 rounded-md p-2 dark:hover:bg-gray-800" onClick={scrollToDown}>
+					<p className="text-xs text-gray-500">Read more </p>
+					<DownArrow />
+				</div>
 			</div>
 			<div>
 				<Divider />
