@@ -15,6 +15,7 @@ module.exports = {
 		],
 	},
 	darkMode: "class", // or 'media' or 'class'
+	mode: "jit",
 	theme: {
 		colors: {
 			yellow: colors.yellow,
