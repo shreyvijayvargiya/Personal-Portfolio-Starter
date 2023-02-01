@@ -28,7 +28,10 @@ const Home = () => {
 				<div className="my-4">
 					<p className="text-8xl my-4">{values.heading}</p>
 					<p className="text-xl md:w-4/5 sm:w-full xxs:w-full xs:w-full mx-auto">
-						{values?.description}
+					 {values?.description}
+					</p>
+					<p className="text-sm md:w-4/5 sm:w-full xxs:w-full xs:w-full mx-auto">
+					 {values?.caption}
 					</p>
 				</div>
 				<div className="text-center cursor-pointer w-fit hover:bg-gray-100 rounded-md p-2 dark:hover:bg-gray-800" onClick={scrollToDown}>
