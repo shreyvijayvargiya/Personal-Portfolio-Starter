@@ -1,7 +1,7 @@
 const portfolioData = {
 	name: "Shrey vijayvargiya",
 	heading: "this is Shrey",
-	description: `Developer 👓  Designer 🎨  Writer ✍️ || Breaking Topics into Steps, Building the products & sharing the Journey`,
+	description: `Developer 👓  Designer 🎨  Writer ✍️ || I am an artist who develop products, design interface, write and share the journey. Just exploring multiple nuances to get to my own niche one day Or May be I am my NICHE.`,
 	workExperience: {
 		content: [
 			{
