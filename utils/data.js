@@ -1,8 +1,8 @@
 const portfolioData = {
 	name: "Shrey vijayvargiya",
 	heading: "this is Shrey",
-	description: `Developer 👓  Designer 🎨  Writer ✍️`,
-	caption: "I am an artist who develop products, design interface, write and share the journey. Just exploring multiple nuances to get to my own niche one day Or May be I am my NICHE.",
+	description: `Developer &  Writer ✍️`,
+	caption: "I am Full Stack developer with 4 years of experience in developing mobile and desktop application with frontend being my primary strength",
 	workExperience: {
 		content: [
 			{
@@ -45,6 +45,10 @@ const portfolioData = {
 			{
 				name: "Koo, micro blogging application",
 				link: "https://kooapp.com",
+			},
+			{
+				name: "Find Jobs Portals",
+				link: "https://findjobsportals.vercel.app/",
 			},
 			{
 				name: "Tech platform, Learn how products are developed, iHateReading",
