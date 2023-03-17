@@ -12,6 +12,11 @@ const portfolioData = {
 					"Developing and Running Full Stack website iHateReading along with Writing Blogs and Making online content",
 			},
 			{
+				name: "Senior Frontend Developer - Koo",
+				date: "August 2021 - September 2022",
+				content: "Lead frontend team of 6 members. My job is to develop and manage Koo website along with dashboard or admin panel for non-technical team to manage koos users.",
+			},
+			{
 				name: "Mobile App Developer - CoinSwitch",
 				date: "March 20 - jan 21",
 				content:
