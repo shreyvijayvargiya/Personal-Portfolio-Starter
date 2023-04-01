@@ -5,6 +5,9 @@ import FindJobsPortals from "projects/FindJobsPortals";
 import IHateReadingLogs from "projects/iHateReadingLogs";
 import IHateReading from "projects/iHateReading";
 import BloggingWebsiteStarterKit from "projects/BloggingWebsiteStarterKit";
+import SearchCurrency from "projects/SearchCurrency";
+import DragDropDemo from "projects/DragDropDemo";
+import ReactNativeBottomSheetDemo from "projects/ReactNativeBottomSheet";
 
 const ProjectComponent = () => {
 	const [activeId, setActiveId] = useState(router.query.id);
@@ -29,8 +32,19 @@ const ProjectComponent = () => {
 			id: 5,
 			name: "Ultimate blog website starter kit",
 		},
+		{
+			id: 6,
+			name: "Search & Filter currency API ",
+		},
+		{
+			id: 7,
+			name: "Drag Drop Demo",
+		},
+		{
+			id: 8,
+			name: "React Native Bottom Sheet Demo",
+		},
 	];
-
 
 	return (
 		<div className="w-full">
@@ -74,6 +88,9 @@ const ProjectComponent = () => {
 				{router.query.id == 3 && <IHateReadingLogs />}
 				{router.query.id == 4 && <IHateReading />}
 				{router.query.id == 5 && <BloggingWebsiteStarterKit />}
+				{router.query.id == 6 && <SearchCurrency />}
+				{router.query.id == 7 && <DragDropDemo />}
+				{router.query.id == 8 && <ReactNativeBottomSheetDemo />}
 			</div>
 		</div>
 	);
