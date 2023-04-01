@@ -11,22 +11,28 @@ const ProjectsComponent = () => {
 				<img src="./images/projects.png" className="w-20 h-20 rounded-sm" />
 				<p className="text-5xl">Projects</p>
 			</div>
-			<ol className="list-disc px-10 py-5 border border-gray-800 rounded-md">
-				{values &&
-					values.length > 0 &&
-					values.map((item) => (
-						<li className="m-2" key={item.name}>
-							{item?.name}
-							<a
-								href={item?.link}
-								className="text-indigo-600 mx-2"
-								target="_blank"
-							>
-								Link
-							</a>
-						</li>
-					))}
-			</ol>
+			<div>
+				<ol className="list-disc px-10 py-5 border border-gray-800 rounded-md">
+					{values &&
+						values.length > 0 &&
+						values.map((item) => (
+							<li className="m-2" key={item.name}>
+								{item?.name}
+								<a
+									href={item?.link}
+									className="text-indigo-600 mx-2"
+									target="_blank"
+								>
+									Link
+								</a>
+							</li>
+						))}
+				</ol>
+				<br />
+				<a className="p-2 border border-black rounded-md hover:border-none hover:bg-gray-900 hover:text-white" href="/projects">
+					View all
+				</a>
+			</div>
 		</div>
 	);
 };
