@@ -8,6 +8,7 @@ import BloggingWebsiteStarterKit from "projects/BloggingWebsiteStarterKit";
 import SearchCurrency from "projects/SearchCurrency";
 import DragDropDemo from "projects/DragDropDemo";
 import ReactNativeBottomSheetDemo from "projects/ReactNativeBottomSheet";
+import GithubApiDemo from "projects/GithubAPIDemo";
 
 const ProjectComponent = () => {
 	const [activeId, setActiveId] = useState(router.query.id);
@@ -44,6 +45,10 @@ const ProjectComponent = () => {
 			id: 8,
 			name: "React Native Bottom Sheet Demo",
 		},
+		{
+			id: 9,
+			name: "Github API Demo"
+		}
 	];
 
 	return (
@@ -91,6 +96,7 @@ const ProjectComponent = () => {
 				{router.query.id == 6 && <SearchCurrency />}
 				{router.query.id == 7 && <DragDropDemo />}
 				{router.query.id == 8 && <ReactNativeBottomSheetDemo />}
+				{router.query.id == 9 && <GithubApiDemo />}
 			</div>
 		</div>
 	);
