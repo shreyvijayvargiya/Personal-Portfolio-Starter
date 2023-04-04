@@ -2,7 +2,7 @@ const portfolioData = {
 	name: "Shrey vijayvargiya",
 	heading: "this is Shrey",
 	description: `Developer &  Writer ✍️`,
-	caption: "I am Full Stack developer with 4 years of experience in developing mobile and desktop application with frontend being my primary strength",
+	caption: "I'm Shrey Vijayvargiya, a Full Stack developer with around 4 years of industry experience in developing web and mobile applications, APIs, Databases, and blockchain.",
 	workExperience: {
 		content: [
 			{
