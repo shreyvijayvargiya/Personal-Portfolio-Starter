@@ -9,6 +9,7 @@ import SearchCurrency from "projects/SearchCurrency";
 import DragDropDemo from "projects/DragDropDemo";
 import ReactNativeBottomSheetDemo from "projects/ReactNativeBottomSheet";
 import GithubApiDemo from "projects/GithubAPIDemo";
+import WebCodeEditor from "projects/WebCodeIDE";
 
 const ProjectComponent = () => {
 	const [activeId, setActiveId] = useState(router.query.id);
@@ -20,6 +21,10 @@ const ProjectComponent = () => {
 		{
 			id: 2,
 			name: "Find Jobs Portals",
+		},
+		{
+			id: 10,
+			name: "Web Code Editor",
 		},
 		{
 			id: 3,
@@ -47,8 +52,8 @@ const ProjectComponent = () => {
 		},
 		{
 			id: 9,
-			name: "Github API Demo"
-		}
+			name: "Github API Demo",
+		},
 	];
 
 	return (
@@ -97,6 +102,7 @@ const ProjectComponent = () => {
 				{router.query.id == 7 && <DragDropDemo />}
 				{router.query.id == 8 && <ReactNativeBottomSheetDemo />}
 				{router.query.id == 9 && <GithubApiDemo />}
+				{router.query.id == 10 && <WebCodeEditor />}
 			</div>
 		</div>
 	);
