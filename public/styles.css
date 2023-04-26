@@ -1,4 +1,22 @@
 body {
-  margin: 0px;
-  background-color: white !important;
+	margin: 0px;
+	background-color: white !important;
+}
+
+@media only screen and (max-width: 600px) {
+	.mobile-home {
+		display: "inline-block";
+	}
+	.desktop-home {
+		display: "none";
+	}
+}
+
+@media only screen (min-width: 600px) {
+	.mobile-home {
+		display: "none";
+	}
+	.desktop-home {
+		display: "inline-block";
+	}
 }

@@ -37,14 +37,14 @@ const Navbar = () => {
 					</button>
 				</div>
 			</div>
-			<div className="flex justify-start gap-2 fixed bottom-5 right-5 z-10">
+			{/* <div className="flex justify-start gap-2 fixed bottom-5 right-5 z-10">
 				<button
 					onClick={toggle}
 					className="py-2 text-xs px-2 border-black text-gray-800 bg-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-100"
 				>
 					Press T to toggle theme
 				</button>
-			</div>
+			</div> */}
 		</>
 	);
 };
