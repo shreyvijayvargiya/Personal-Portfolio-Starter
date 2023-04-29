@@ -22,32 +22,32 @@ import { DiPython } from "react-icons/di";
 import colors from "tailwindcss/colors";
 
 export const DownArrow = () => {
-	return <AiOutlineArrowDown size={20} className="w-full text-center mx-auto dark:text-gray-400 my-2" />;
+	return <AiOutlineArrowDown size={20} className="w-full text-center mx-auto dark:text-gray-200 my-2" />;
 };
 export const TwitterIcon = () => {
-	return <AiFillTwitterCircle size={24} className="dark:text-gray-400" />;
+	return <AiFillTwitterCircle size={24} className="dark:text-gray-200" color={colors.blue[400]} />;
 };
 
 export const GithubIcon = () => {
-	return <AiFillGithub size={24} className="dark:text-gray-400" />;
+	return <AiFillGithub size={24} className="dark:text-gray-200" color={colors.gray[400]} />;
 };
 export const LinkedInIcon = () => {
-	return <AiFillLinkedin size={24} className="dark:text-gray-400" />;
+	return <AiFillLinkedin size={24} className="dark:text-gray-200" colo={colors.indigo[400]}  />;
 };
 export const DevToIcon = () => {
-	return <FaDev size={24} className="dark:text-gray-400" />;
+	return <FaDev size={24} className="dark:text-gray-200" color={colors.blueGray[400]} />;
 };
 
 export const YoutubeIcon = () => {
-	return <AiFillYoutube size={24} className="dark:text-gray-400" />;
+	return <AiFillYoutube size={24} className="dark:text-gray-200" color={colors.red[400]} />;
 };
 
 export const HashnodeIcon = () => {
-	return <SiHashnode size={24} className="dark:text-gray-400" />;
+	return <SiHashnode size={24} className="dark:text-gray-200" color={colors.cyan[400]} />;
 };
 
 export const InstagramIcon = () => {
-	return <AiFillInstagram size={24} className="dark:text-gray-400" />;
+	return <AiFillInstagram size={24} className="dark:text-gray-200" color={colors.pink[400]} />;
 };
 
 export const RenderIconComponent = ({ name }) => {

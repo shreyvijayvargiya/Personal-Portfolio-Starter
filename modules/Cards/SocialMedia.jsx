@@ -12,7 +12,7 @@ const SocialMediaComponent = ({ removeLeftIcon  }) => {
 				<img src="./images/socialMedia.png" className="w-20 h-20 rounded-sm" />
 				<p className="text-5xl">Social Media</p>
 			</div>}
-			<div className="px-10 py-5 border border-gray-800 rounded-md">
+			<div className="grid grid-cols-3 items-center px-10 py-5 border border-gray-800 rounded-md">
 				{values &&
 					values.length > 0 &&
 					values.map((item) => (
@@ -20,7 +20,7 @@ const SocialMediaComponent = ({ removeLeftIcon  }) => {
 							href={item?.link}
 							key={item?.name}
 							target="_blank"
-							className="m-2 flex justify-start items-center gap-1"
+							className="m-2 flex justify-start items-center gap-1 p-4 border border-gray-800 hover:border-gray-500 rounded-md"
 						>
 							<RenderIconComponent name={item?.name} />
 							<p>{item?.name}</p>
