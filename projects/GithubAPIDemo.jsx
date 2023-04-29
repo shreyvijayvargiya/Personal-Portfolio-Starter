@@ -16,8 +16,16 @@ const GithubApiDemo = () => {
 			>
 				Github repo
 			</a>
-			<br />
-			<p></p>
+			<br />{" "}
+			<div>
+				<p>Demo</p>
+				<iframe
+					width={1200}
+					height={700}
+					src="https://github.com/shreyvijayvargiya/Github-API-Demo"
+					className="border border-gray-400 rounded-md"
+				/>
+			</div>
 		</div>
 	);
 };
